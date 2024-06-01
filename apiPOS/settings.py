@@ -84,17 +84,27 @@ WSGI_APPLICATION = 'apiPOS.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'POSAdmin',
-        'USER': 'admin',
-        'PASSWORD': 'admin@123',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'POSAdmin',
+#         'USER': 'admin',
+#         'PASSWORD': 'admin@123',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
 
+DATABASES = {
+'default': {
+'ENGINE': 'django.db.backends.mysql',
+'NAME': 'mydb',
+'USER': 'eriline',
+'PASSWORD': 'admin@123',
+'HOST':'eriline.mysql.pythonanywhere-services.com',
+'PORT':'3306',
+}
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
